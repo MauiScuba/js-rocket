@@ -8,8 +8,9 @@
 }
 
 .right{
-    background-color: aliceblue;
-    position: fixed;
+    background: url(../img/background.gif) no-repeat 0 0;
+    background-size: cover;
+    position: absolute;
     width: 50%;
     height: 100%;
     top: 0;
@@ -17,27 +18,58 @@
 }
 
 .ground{
-    background-color: green;
+    background: url('../img/ground2.png') no-repeat center;
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 20px;
+    height: 90px;
+}
+
+.nervous{
+    background: url('../img/whoohoo2.png') no-repeat 0 0;
+    position: absolute;
+    top: 80px;
+    left: 320px;
+    width: 400px;
+    height: 320px;
 }
 
 .rocket{
     position: absolute;
     left: 50%;
     bottom: 20px;
-    width: 20px;
-    height: 100px;
-    background-color: blue;
+    width: 130px;
+    height: 211px;
+    margin-left: -65px;
+    background: url('../img/state11.png') no-repeat 0 0; /*i could also put 'center center' instead of '0 0'*/
     transition: bottom 10000ms;
 }
+
+
+/* rocket bg image */
+body.body-state2 .rocket{
+    background-image: url('../img/state22.gif');
+}
+
+body.body-state3 .rocket,
+body.body-state4 .rocket{
+    background-image: url('../img/state33.gif');
+    height: 268px;
+}
+
+body.body-state5 .rocket{
+    background-image: url('../img/boom2.png');
+    width: 480px;
+    height: 384px;
+    margin-left: -240px;
+}
+/**/
 
 body.body-state1 .rocket{
     transition: none;
 }
+
 
 body.body-state3 .rocket,
 body.body-state4 .rocket{

@@ -12,6 +12,15 @@ var changeState=function (state) {
             countdownNumber=countdownNumber-1;
             document.getElementById('countdown').innerHTML=countdownNumber;
             
+            if (countdownNumber==5) {
+                //be nervous
+                
+            }
+
+            if (countdownNumber==3) {
+                //i cant wait
+            }
+
             if (countdownNumber<=0){
                 changeState(3);
             };
