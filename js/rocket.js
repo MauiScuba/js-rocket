@@ -12,13 +12,19 @@ var changeState=function (state) {
             countdownNumber=countdownNumber-1;
             document.getElementById('countdown').innerHTML=countdownNumber;
             
-            if (countdownNumber==5) {
+            if (countdownNumber>4 && countdownNumber<=6) {
                 //be nervous
-                
+                document.getElementById('nervous').className='nervous show'
+            }else{
+                document.getElementById('nervous').className='nervous'
             }
+ 
 
-            if (countdownNumber==3) {
+            if (countdownNumber>1 && countdownNumber<=4) {
                 //i cant wait
+                document.getElementById('cant-wait').className='cant-wait show'
+            }else{
+                document.getElementById('cant-wait').className='cant-wait'
             }
 
             if (countdownNumber<=0){

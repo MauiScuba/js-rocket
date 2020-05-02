@@ -1,3 +1,7 @@
+body{
+    font-family:'helvetica', 'arial', sans-serif;
+}
+
 .left{
     background-color: aquamarine;
     position: fixed;
@@ -5,6 +9,26 @@
     height: 100%;
     top: 0;
     left: 0;
+}
+
+.interface{
+    text-align: center;
+    padding: 20px;
+}
+
+a.button{
+    display: inline-block;
+    background-color: white;
+    color: black;
+    padding: 20px 40px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: color 300ms;
+}
+
+a:hover{
+    color: red;
 }
 
 .right{
@@ -29,11 +53,32 @@
 .nervous{
     background: url('../img/whoohoo2.png') no-repeat 0 0;
     position: absolute;
-    top: 80px;
-    left: 320px;
+    bottom: 45px;
+    left: 50%;
     width: 400px;
     height: 320px;
+    margin-left: -90px;
+    display: none;
 }
+
+.nervous.show{
+    display: block;
+}
+
+.cant-wait{
+    background: url('../img/i-cant-wait2.png') no-repeat 0 0;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    width: 400px;
+    height: 320px;
+    margin-left: -270px;
+    display: none;
+}
+.cant-wait.show{
+    display: block;
+}
+
 
 .rocket{
     position: absolute;
@@ -88,9 +133,5 @@ body.body-state4 .state4{display: block;}
 body.body-state5 .state5{display: block;}
 
 a{
-
-}
-
-a.button{
 
 }

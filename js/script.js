@@ -1,3 +1,7 @@
+setTimeout(function (params) {
+    location.href='rocket.html';
+},5000);
+
 /*
 this function does this.
 */
