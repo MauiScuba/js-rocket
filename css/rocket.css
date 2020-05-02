@@ -1,9 +1,10 @@
 body{
     font-family:'helvetica', 'arial', sans-serif;
+    color: aquamarine;
 }
 
 .left{
-    background-color: aquamarine;
+    background-color: #4D1983;
     position: fixed;
     width: 50%;
     height: 100%;
@@ -18,8 +19,8 @@ body{
 
 a.button{
     display: inline-block;
-    background-color: white;
-    color: black;
+    background-color: aquamarine;
+    color: #4D1983;
     padding: 20px 40px;
     text-transform: uppercase;
     text-decoration: none;
