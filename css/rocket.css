@@ -1,6 +1,9 @@
 body{
     font-family:'helvetica', 'arial', sans-serif;
-    color: aquamarine;
+}
+
+h1 { font-family: 'gilbert-color-bold-preview5';
+    
 }
 
 .left{
